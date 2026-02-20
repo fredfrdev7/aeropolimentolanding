@@ -1,14 +1,12 @@
 import { WhatsappLogo } from '@phosphor-icons/react/dist/ssr'
 import herophoto from '../../../public/herophoto.jpg'
-import h130sp from '../../../public/h130sp.png'
-import h125 from '../../../public/h125.png'
 import hexagonwhiteasset from '../../../public/hexagonwhiteasset.png'
 import Image from 'next/image'
 
 export function Hero() {
     return (
 
-        <section className="bg-linear-to-tr from-red-950 via-transparent via-50% to-red-700 to-160% text-white relative pb-26 overflow-hidden font-custom">
+        <section className="bg-linear-to-tr from-red-950 via-transparent via-50% to-red-700 to-160% text-white relative h-screen overflow-hidden font-custom">
 
             <div>
                 <Image src={herophoto} alt='foto jato' fill sizes='100vw' className='object-cover' quality={100} priority />
@@ -32,9 +30,9 @@ export function Hero() {
 
                 <article className='grid grid-cols-1 lg:grid-cols-2 gap-3 relative'>
 
-                    <div className='space-y-6 z-1'>
-
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold pb-26" data-aos="fade-down">1º Empresa homologada em serviço especializado de estética aeronáutica</h1>
+                    <div className='flex flex-col justify-between space-y-6 z-1'>
+                        
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold" data-aos="fade-down">1º Empresa homologada em serviço especializado de estética aeronáutica</h1>
                         {/* <p className="lg:text-md tracking-[.05em]" data-aos="fade-right">A primeira empresa especializada em estética aeronaútica homologada para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e regulamentações da ANAC.</p> */}
                
                         {/* <a href="#" className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2">
@@ -43,7 +41,7 @@ export function Hero() {
                         </a> */}
 
 
-                        <div className="mt-8">
+                        <div className="">
                             <p className="text-sm">
                                 <b className="bg-linear-to-tr from bg-red-950 to-black text-white px-3 py-3 rounded-md">15</b>
                                 <strong> ANOS DE MERCADO</strong> 

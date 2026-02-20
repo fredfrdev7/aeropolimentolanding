@@ -86,13 +86,13 @@ export function Services() {
                         <div className='flex'>
                             {services.map((item, index) => (
                                 <div key={index} className='flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3'>
-                                    <article className='bg-gray-800 text-white rounded-2xl p-6 space-y-4 h-full flex flex-col'>
+                                    <article className='bg-linear-to-tr from-red-950 via-black via-50% to-red-500 to-160% text-white rounded-2xl p-6 space-y-4 h-full flex flex-col'>
                                         <div className='flex-1 flex items-start justify-between'>
                                             <div className='flex gap-3'>
                                                 <span className='text-3xl'>{item.icon}</span>
                                                 <div>
                                                     <h3 className='font-bold text-xl my-1'>{item.title}</h3>
-                                                    <p className='text-gray-400 text-sm'>
+                                                    <p className='text-gray-300 text-sm'>
                                                         {item.description}
                                                     </p>
                                                 </div>

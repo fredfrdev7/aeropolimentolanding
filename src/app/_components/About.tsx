@@ -1,13 +1,13 @@
 import Image from "next/image"
 import falconjet from "../../../public/falconjet.jpg"
-import h160 from "../../../public/h160.jpg"
+import turbinefalcon from "../../../public/turbinefalcon.jpg"
 import { Check, MapPin } from "lucide-react"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
 
 
 export function About() {
     return (
-        <section className="bg-linear-to-b from-white from-20% to-black py-16 font-custom" >
+        <section className="bg-linear-to-t from-red-950 via-black via-50% to-white to-90% py-16 font-custom" >
             <div className="container px-4 mx-auto">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -17,7 +17,7 @@ export function About() {
                             <Image src={falconjet} alt="h160" fill quality={100} className="object-cover hover:scale-110 duration-300" priority />
                         </div>
                         <div className="absolute w-55 h-50 right-4 -bottom-8 rounded-lg border-4 overflow-hidden border-white" data-aos="fade-up">
-                            <Image src={h160} alt="h160" fill quality={100} className="object-cover" priority />
+                            <Image src={turbinefalcon} alt="h160" fill quality={100} className="object-cover" priority />
                         </div>
                     </div>
 

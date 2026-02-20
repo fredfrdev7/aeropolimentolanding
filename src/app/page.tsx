@@ -5,6 +5,7 @@ import { Testimonials } from "./_components/Testimonials";
 import { Footer } from "./_components/Footer";
 import Certified from "./_components/Certified";
 import Products from "./_components/Products";
+import Polish from "./_components/Polish";
 // import Aerocare from "./_components/Aerocare";
 
 export default function Home() {
@@ -14,9 +15,10 @@ export default function Home() {
       <Certified />
       <About />
       <Services />
+      <Polish />
       <Products />
       {/* <Aerocare /> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </main>
   )
