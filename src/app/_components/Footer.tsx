@@ -3,6 +3,12 @@ import leonardo from '../../../public/leonardo.png'
 import robinson from '../../../public/robinson.png'
 import cirrus from '../../../public/cirrus.png'
 import embraer from '../../../public/embraer.png'
+import bell from '../../../public/bell.svg'
+import cessna from '../../../public/cessna.svg'
+import bombardier from '../../../public/bombardier.svg'
+import beechcraft from '../../../public/beechcraft.svg'
+import dassault from '../../../public/dassault.svg'
+import gulfstream from '../../../public/gulfstream.png'
 import Image from 'next/image'
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
 
@@ -12,6 +18,12 @@ const brands = [
     { name: "Robinson", logo: robinson },
     { name: "Cirrus", logo: cirrus },
     { name: "Embraer", logo: embraer },
+    { name: "Beechcraft", logo: beechcraft },
+    { name: "Bombardier", logo: bombardier },
+    { name: "Gulfstream", logo: gulfstream },
+    { name: "Dassault", logo: dassault },
+    { name: "Bell", logo: bell },
+    { name: "Cessna", logo: cessna },
 ]
 
 
