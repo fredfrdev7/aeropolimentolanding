@@ -1,23 +1,30 @@
 import Image from "next/image";
 import logoida from '../../../public/logoida.png'
 import logoanac from '../../../public/logoanac.png'
+import brazilflag from '../../../public/brazilflag.svg'
+import usaflag from '../../../public/usaflag.svg'
 import { Award } from "lucide-react";
 
 export default function Certified() {
     return (
 
-        <section className="bg-linear-to-tr from-zinc-100 via-white via-50% to-zinc-300 to-160% p-6 font-custom overflow-hidden">
-            <div className="text-3xl font-bold pb-3">
-                <h1>CERTIFICAÇÕES</h1>
-            </div>
-            <Award className="w-12 h-12"/>
-            <p className="text-[0.9rem] tracking-[.05em] pb-6 pt-4" data-aos="fade-right">A primeira empresa especializada em estética aeronaútica homologada para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e regulamentações da ANAC.</p>
-            <div className="flex justify-center items-center gap-20">
-                <div className="w-32" data-aos="fade-right">
-                    <Image src={logoanac} alt="logoanac" />
+        <section className="bg-linear-to-tr from-zinc-100 via-white via-50% to-zinc-300 to-160% p-4 pt-12 pb-9 font-custom overflow-hidden">
+            <div className="lg:flex gap-20">
+                <div className="">
+                    <h1 className="font-bold text-4xl pb-3">CERTIFICAÇÕES</h1>
+                    <Award className="w-12 h-12" />
+                    <p className="pb-6 pt-4" data-aos="fade-right">A primeira empresa especializada em estética aeronaútica homologada para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e regulamentações da ANAC.</p>
                 </div>
-                <div className="w-32" data-aos="fade-left">
-                    <Image src={logoida} alt="logoida" />
+
+                <div className="md:px-16 flex justify-center items-center gap-20">
+                    <div className="flex flex-col justify-center items-center w-32 gap-6" data-aos="fade-right">
+                        <Image src={brazilflag} alt="brazilflag" className="w-12"/>
+                        <Image src={logoanac} alt="logoanac" />
+                    </div>
+                    <div className="flex flex-col justify-center items-center w-32 gap-6" data-aos="fade-left">
+                        <Image src={usaflag} alt="usaflag" className="w-13"/>
+                        <Image src={logoida} alt="logoida" />
+                    </div>
                 </div>
             </div>
         </section>

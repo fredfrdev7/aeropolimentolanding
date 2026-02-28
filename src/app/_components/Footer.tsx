@@ -1,49 +1,41 @@
-import airbus from '../../../public/airbus.png'
-import leonardo from '../../../public/leonardo.png'
-import robinson from '../../../public/robinson.png'
-import cirrus from '../../../public/cirrus.png'
-import embraer from '../../../public/embraer.png'
+import Marquee from 'react-fast-marquee'
+
+import airbus from '../../../public/airbus.svg'
+import leonardo from '../../../public/leonardo.svg'
+import robinson from '../../../public/robinson.svg'
+import cirrus from '../../../public/cirrus.svg'
+import embraer from '../../../public/embraer.svg'
 import bell from '../../../public/bell.svg'
 import cessna from '../../../public/cessna.svg'
 import bombardier from '../../../public/bombardier.svg'
 import beechcraft from '../../../public/beechcraft.svg'
 import dassault from '../../../public/dassault.svg'
-import gulfstream from '../../../public/gulfstream.png'
+import gulfstream from '../../../public/gulfstream.svg'
 import Image from 'next/image'
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
-
-const brands = [
-    { name: "Airbus", logo: airbus },
-    { name: "Leonardo", logo: leonardo },
-    { name: "Robinson", logo: robinson },
-    { name: "Cirrus", logo: cirrus },
-    { name: "Embraer", logo: embraer },
-    { name: "Beechcraft", logo: beechcraft },
-    { name: "Bombardier", logo: bombardier },
-    { name: "Gulfstream", logo: gulfstream },
-    { name: "Dassault", logo: dassault },
-    { name: "Bell", logo: bell },
-    { name: "Cessna", logo: cessna },
-]
 
 
 export function Footer() {
     return (
-        <section className='bg-red-950 py-16 text-white font-custom'>
-            <div className='container mx-auto px-4'>
+        <section className='bg-red-800 font-custom text-white py-6'>
+            <h1 className='font-bold text-3xl pb-6 px-4'>Marcas que trabalhamos</h1>
+            <div className=''>
+                <Marquee speed={150} delay={0} className='py-6 mask-alpha mask-r-from-black mask-r-from-70% mask-r-to-transparent'>
+                    <Image src={airbus} alt='airbuslogo' className='w-32 mx-12' />
+                    <Image src={cessna} alt='cessnalogo' className='w-20 mx-12' />
+                    <Image src={leonardo} alt='leonardologo' className='w-42 mx-12' />
+                    <Image src={robinson} alt='robinsonlogo' className='w-34 mx-12' />
+                    <Image src={bombardier} alt='bombardierlogo' className='w-34 mx-12' />
+                    <Image src={cirrus} alt='cirruslogo' className='w-36 mx-12' />
+                    <Image src={embraer} alt='embraerlogo' className='w-42 mx-12' />
+                    <Image src={bell} alt='belllogo' className='w-16 mx-12' />
+                    <Image src={beechcraft} alt='beechcraftlogo' className='w-36 mx-9' />
+                    <Image src={dassault} alt='dassaultlogo' className='w-36 mx-12' />
+                    <Image src={gulfstream} alt='gulfstreamlogo' className='w-36 mx-12' />
+                </Marquee>
 
-                <div className='border-b border-white/20 pb-8'>
-                    <h4 className='text-3xl font-semibold mb-8 text-center'>Marcas que trabalhamos</h4>
-                    <div className='grid grid-cols-2 lg:grid-cols-5 gap-8'>
-                        {brands.map((item, index) => (
-                            <div key={index} className='bg-white p-4 rounded-lg flex items-center justify-center'>
-                                <Image src={item.logo} alt={item.name} width={100} height={50} quality={100} style={{ width: "auto", height: "auto", }} className='object-contain' />
-                            </div>
-                        ))}
-                    </div>
-                </div>
                 <div>
-                    <footer className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5'>
+                    <footer className='bg-red-800 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-9 px-4'>
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>AERO-SERVICE AND DETAILING</h3>
                             <p className='mb-4'>Cuidando da sua Aeronave com amor e dedicação.</p>

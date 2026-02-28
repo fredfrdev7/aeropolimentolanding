@@ -3,6 +3,13 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react'
 import { WhatsappLogo } from '@phosphor-icons/react'
+import checklist from '../../../public/checklist.jpg'
+import paintcleaner from '../../../public/paintcleaner.jpg'
+import insideclear from '../../../public/insideclear.jpg'
+import insidecare from '../../../public/insidecare.jpg'
+import proceduralpolish from '../../../public/proceduralpolish.jpg'
+import plexiglass from '../../../public/plexiglass.jpg'
+import Image from 'next/image'
 
 const services = [
     {
@@ -11,7 +18,8 @@ const services = [
         duration: "1h",
         price: "$1500",
         icon: <Scissors />,
-        linkText: "Olá vi no site sobre Descontaminação de pintura"
+        linkText: "Olá vi no site sobre Descontaminação de pintura",
+        image: checklist
     },
     {
         title: "Descontaminação de Pintura",
@@ -19,7 +27,8 @@ const services = [
         duration: "1h",
         price: "$1500",
         icon: <Scissors />,
-        linkText: "Olá vi no site sobre Descontaminação de pintura"
+        linkText: "Olá vi no site sobre Descontaminação de pintura",
+        image: paintcleaner
     },
     {
         title: "Higienização interna",
@@ -27,7 +36,8 @@ const services = [
         duration: "1h",
         price: "$3500",
         icon: <Syringe />,
-        linkText: "Olá vi no site sobre Higienização interna"
+        linkText: "Olá vi no site sobre Higienização interna",
+        image: insideclear
     },
     {
         title: "Impermeabilização interna",
@@ -35,7 +45,8 @@ const services = [
         duration: "6h",
         price: "$16000",
         icon: <Hotel />,
-        linkText: "Olá vi no site sobre Impermeabilização interna"
+        linkText: "Olá vi no site sobre Impermeabilização interna",
+        image: insidecare
     },
     {
         title: "Polimento técnico",
@@ -43,7 +54,8 @@ const services = [
         duration: "16h",
         price: "$15000",
         icon: <CarTaxiFront />,
-        linkText: "Olá vi no site sobre Polimento técnico"
+        linkText: "Olá vi no site sobre Polimento técnico",
+        image: proceduralpolish
     },
     {
         title: "Polimento de Para-brisa em Plexiglass",
@@ -51,7 +63,8 @@ const services = [
         duration: "16h",
         price: "$15000",
         icon: <CarTaxiFront />,
-        linkText: "Olá vi no site sobre Polimento técnico"
+        linkText: "Olá vi no site sobre Polimento técnico",
+        image: plexiglass
     },
 
 ]
@@ -76,7 +89,7 @@ export function Services() {
     }
 
     return (
-        <section className="bg-white py-16 font-custom">
+        <section className="bg-white py-12 font-custom">
             <div className="container mx-auto px-4">
 
                 <h2 className="text-4xl font-bold mb-12">SERVIÇOS</h2>
@@ -85,21 +98,24 @@ export function Services() {
                     <div className='overflow-hidden' ref={emblaRef}>
                         <div className='flex'>
                             {services.map((item, index) => (
-                                <div key={index} className='flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3'>
-                                    <article className='bg-linear-to-tr from-red-950 via-black via-50% to-red-500 to-160% text-white rounded-2xl p-6 space-y-4 h-full flex flex-col'>
-                                        <div className='flex-1 flex items-start justify-between'>
+                                <div key={index} className='flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] relative px-3'>
+                                    <div className=''>
+                                        <Image src={item.image} alt={item.title} quality={100} className='object-cover absolute bottom-0 left-0 rounded-4xl px-3' />
+                                    </div>
+                                    <article className='bg-background/30 bg-linear-to-t from-black from-10% via-transparent via-50% to-red-700 to-130% text-white aspect-square p-6 space-y-4 h-full relative flex flex-col rounded-3xl'>
+                                        <div className='flex-1 flex items-start justify-between relative'>
                                             <div className='flex gap-3'>
                                                 <span className='text-3xl'>{item.icon}</span>
                                                 <div>
                                                     <h3 className='font-bold text-xl my-1'>{item.title}</h3>
-                                                    <p className='text-gray-300 text-sm'>
+                                                    <p className='text-gray-100 text-sm'>
                                                         {item.description}
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div className='border-t border-gray-700 pt-4 flex items-center justify-between'>
+                                        <div className=''>
+                                            <div className='border-t border-gray-100 pt-4 flex items-center justify-between'>
                                                 <div className='flex items-center gap-2 text-sm'>
                                                     <Clock className='w-5 h-5' />
                                                     <span>{item.duration}</span>
