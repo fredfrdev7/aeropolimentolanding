@@ -8,7 +8,7 @@ export function Hero() {
         <section className="text-white overflow-hidden font-custom-extended h-screen">
 
             <div>
-                <Image src={herophoto} alt='foto jato' fill sizes='100' className='object-cover' quality={100} priority />
+                <Image src={herophoto} alt='foto jato' fill sizes='100vh' className='object-cover' quality={100} priority />
             </div>
 
 
