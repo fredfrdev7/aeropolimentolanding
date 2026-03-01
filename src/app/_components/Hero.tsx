@@ -5,7 +5,7 @@ import Image from 'next/image'
 export function Hero() {
     return (
 
-        <section className="text-white overflow-hidden font-custom-extended h-screen">
+        <section className="text-white overflow-hidden font-custom-extended h-screen relative">
 
             <div>
                 <Image src={herophoto} alt='foto jato' fill sizes='100vw' className='absolute object-cover' quality={100} priority />
