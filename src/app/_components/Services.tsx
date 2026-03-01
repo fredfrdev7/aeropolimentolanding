@@ -102,7 +102,7 @@ export function Services() {
                                     <div className=''>
                                         <Image src={item.image} alt={item.title} quality={100} className='object-cover absolute bottom-0 left-0 px-3' />
                                     </div>
-                                    <article className='bg-background/30 bg-linear-to-t from-black from-10% via-transparent via-50% to-red-700 to-130% text-white aspect-square p-6 space-y-4 h-full relative flex flex-col'>
+                                    <article className='bg-background/30 bg-linear-to-t from-black from-10% via-transparent via-50% to-red-700 to-130% text-white aspect-square p-4 space-y-4 h-full relative flex flex-col'>
                                         <div className='flex-1 flex items-start justify-between relative'>
                                             <div className='flex gap-3'>
                                                 <span className='text-3xl'>{item.icon}</span>
