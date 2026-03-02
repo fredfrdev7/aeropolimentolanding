@@ -26,7 +26,7 @@ export default function Products() {
                 <div className="flex flex-col justify-center items-center gap-6">
                     <h2 className="w-full text-center font-bold border-b border-red-500">APC</h2>
                     <Image src={logoap001} alt="logoap001" className="w-21" data-aos="fade-right" />
-                    <div className="lg:flex items-center md:flex-col justify-items-center px-4 gap-16">
+                    <div className="lg:flex items-center md:flex justify-items-center px-4 gap-16">
                         <Image src={ap001} alt="ap001" className="w-36 lg:w-46 md:w-36 py-6 " />
                         <p>Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
                     </div>
@@ -34,15 +34,15 @@ export default function Products() {
                 <div className="flex flex-col justify-center items-center gap-6">
                     <h3 className="w-full text-center font-bold border-b border-red-500">CERA LÍQUIDA</h3>
                     <Image src={logoap0010} alt="logoap0010" className="w-22" data-aos="fade-left" />
-                    <div className="lg:flex items-center md:flex-col justify-items-center px-4 gap-16">
-                        <Image src={ap0010} alt="ap0010" className="w-46 lg:w-56 md:w-46 py-6" />
+                    <div className="lg:flex items-center md:flex justify-items-center px-4 gap-16">
+                        <Image src={ap0010} alt="ap0010" className="w-46 lg:w-56 md:w-46 py-6 justify-self-center" />
                         <p>Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-6">
                     <h3 className="w-full text-center font-bold border-b border-red-500">MASSA DE POLIR</h3>
                     <Image src={logoap0020} alt="logoap0020" className="w-22" data-aos="fade-right" />
-                    <div className="lg:flex items-center md:flex-col justify-items-center px-4 gap-16">
+                    <div className="lg:flex items-center md:flex justify-items-center px-4 gap-16">
                         <Image src={ap0020} alt="ap0020" className="w-46 lg:w-56 md:w-46 py-6" />
                         <p>Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
                     </div>
