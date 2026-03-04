@@ -1,7 +1,7 @@
 "use client"
 
 import useEmblaCarousel from 'embla-carousel-react'
-import { ChevronLeft, ChevronRight, Scissors, Syringe, CarTaxiFront, Hotel, Clock } from 'lucide-react'
+import { ListTodo, Bubbles, BrushCleaning, ChevronLeft, ChevronRight, ShieldCheck, SquareRoundCorner, Clock, Sparkles } from 'lucide-react'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import checklist from '../../../public/checklist.jpg'
 import paintcleaner from '../../../public/paintcleaner.jpg'
@@ -9,7 +9,9 @@ import insideclear from '../../../public/insideclear.jpg'
 import insidecare from '../../../public/insidecare.jpg'
 import proceduralpolish from '../../../public/proceduralpolish.jpg'
 import plexiglass from '../../../public/plexiglass.jpg'
+import logocard from '../../../public/logocard.svg'
 import Image from 'next/image'
+
 
 const services = [
     {
@@ -17,7 +19,7 @@ const services = [
         description: "Procedimento de avaliação prévia da aeronave que gera um registro técnico antes do início dos serviços, garantindo segurança, conformidade e padrão de qualidade na execução.",
         duration: "1h",
         price: "$1500",
-        icon: <Scissors />,
+        icon: <ListTodo />,
         linkText: "Olá vi no site sobre Descontaminação de pintura",
         image: checklist
     },
@@ -26,7 +28,7 @@ const services = [
         description: "Uma lavagem técninca da fuselagem removendo fuligens sujeiras ancoradas e contaminações",
         duration: "1h",
         price: "$1500",
-        icon: <Scissors />,
+        icon: <Bubbles />,
         linkText: "Olá vi no site sobre Descontaminação de pintura",
         image: paintcleaner
     },
@@ -35,7 +37,7 @@ const services = [
         description: "Higienização minuciosa de cockpit, galley, alojamento de galley, revestimentos em couro, cintos e tapetes, assegurando conservação e alto padrão estético da aeronave.",
         duration: "1h",
         price: "$3500",
-        icon: <Syringe />,
+        icon: <BrushCleaning />,
         linkText: "Olá vi no site sobre Higienização interna",
         image: insideclear
     },
@@ -44,7 +46,7 @@ const services = [
         description: "Aplicação de tratamento de impermeabilização para couro, cintos e tapeçaria, formando uma barreira protetiva contra umidade, sujeira e desgaste prematuro, preservando a aparência e a durabilidade dos materiais da aeronave.",
         duration: "6h",
         price: "$16000",
-        icon: <Hotel />,
+        icon: <ShieldCheck />,
         linkText: "Olá vi no site sobre Impermeabilização interna",
         image: insidecare
     },
@@ -53,7 +55,7 @@ const services = [
         description: "Polimento técnico em superfícies com pintura poliéster e poliuretano, com métodos controlados para remoção de arranhões e marcas sem agressividade ao revestimento. O processo considera espessura, dureza, nível de brilho e padrão de acabamento, incluindo tratamentos em repinturas e etapas de lixamento quando necessárias, para restabelecer a estética da aeronave.",
         duration: "16h",
         price: "$15000",
-        icon: <CarTaxiFront />,
+        icon: <Sparkles />,
         linkText: "Olá vi no site sobre Polimento técnico",
         image: proceduralpolish
     },
@@ -62,7 +64,7 @@ const services = [
         description: "Procedimento técnico de polimento em superfícies de Plexiglass para remoção de marcas leves, recuperação da transparência e melhoria da visibilidade, preservando as características originais do material e o padrão óptico da aeronave.",
         duration: "16h",
         price: "$15000",
-        icon: <CarTaxiFront />,
+        icon: <SquareRoundCorner />,
         linkText: "Olá vi no site sobre Polimento técnico",
         image: plexiglass
     },
@@ -89,26 +91,26 @@ export function Services() {
     }
 
     return (
-        <section className="bg-white py-12 font-custom">
+        <section className="bg-white py-12">
             <div className="container mx-auto px-4">
 
-                <h2 className="text-4xl font-bold mb-12">SERVIÇOS</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-4xl font-custom-extended font-semibold mb-12" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">SERVIÇOS</h2>
 
                 <div className="relative">
                     <div className='overflow-hidden' ref={emblaRef}>
-                        <div className='flex'>
+                        <div className='flex font-custom'>
                             {services.map((item, index) => (
                                 <div key={index} className='flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] relative px-3'>
                                     <div className=''>
                                         <Image src={item.image} alt={item.title} quality={100} className='object-cover absolute bottom-0 left-0 px-3' />
                                     </div>
-                                    <article className='bg-background/30 bg-linear-to-t from-black from-10% via-transparent via-50% to-red-700 to-130% text-white aspect-square p-4 space-y-4 h-full relative flex flex-col'>
+                                    <article className='bg-background/40 bg-linear-to-t from-black from-10% via-transparent via-50% to-red-700 to-130% text-white aspect-square p-4 space-y-4 h-full relative flex flex-col'>
                                         <div className='flex-1 flex items-start justify-between relative'>
                                             <div className='flex gap-3'>
-                                                <span className='text-3xl'>{item.icon}</span>
+                                                <span className='text-3xl pt-1'>{item.icon}</span>
                                                 <div>
-                                                    <h3 className='font-bold text-xl my-1'>{item.title}</h3>
-                                                    <p className='text-gray-100 text-sm'>
+                                                    <h3 className='font-semibold text-xl my-1'>{item.title}</h3>
+                                                    <p className='text-white text-sm font-light'>
                                                         {item.description}
                                                     </p>
                                                 </div>
@@ -117,13 +119,10 @@ export function Services() {
                                         <div className=''>
                                             <div className='border-t border-gray-100 pt-4 flex items-center justify-between'>
                                                 <div className='flex items-center gap-2 text-sm'>
-                                                    <Clock className='w-5 h-5' />
-                                                    <span>{item.duration}</span>
+                                                    <Image src={logocard} className='w-9 h-9' alt='logocard' />
                                                 </div>
-
-                                                <a href="#" className='flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300'>
-                                                    <WhatsappLogo className='w-5 h-5' />
-                                                    Entrar em contato
+                                                <a href="#" className='flex items-center justify-center text-sm border-red-950 border-2 gap-2 hover:bg-red-700 px-4 py-1 rounded-md duration-300'>
+                                                    SAIBA MAIS
                                                 </a>
                                             </div>
                                         </div>

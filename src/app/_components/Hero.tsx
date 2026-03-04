@@ -26,8 +26,8 @@ export function Hero() {
 
             <div className='flex flex-col relative justify-between h-screen bg-linear-to-tr from-red-950 via-transparent via-50% to-red-700 to-160%'>
 
-                <h1 className="pt-26 px-4 text-2xl md:text-4xl lg:text-5xl font-bold uppercase" data-aos="fade-down">1º Empresa homologada em serviço especializado de estética aeronáutica</h1>
-                {/* <p className="lg:text-md tracking-[.05em]" data-aos="fade-right">A primeira empresa especializada em estética aeronaútica homologada para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e regulamentações da ANAC.</p> */}
+                <h1 className="pt-26 px-6 text-3xl md:text-4xl lg:text-4xl font-semibold uppercase" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">1º Empresa homologada em serviço especializado de estética aeronáutica</h1>
+                {/* <p className="font-custom lg:text-md tracking-[.05em]" data-aos="fade-right">A primeira empresa especializada em estética aeronaútica homologada para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e regulamentações da ANAC.</p> */}
 
                 {/* <a href="#" className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2">
                             <WhatsappLogo className='w-5 h-5' />
@@ -36,9 +36,9 @@ export function Hero() {
 
 
                 <div className="pb-9 px-4">
-                    <p className="text-sm">
-                        <b className="bg-linear-to-tr from bg-red-950 to-black text-white px-3 py-3 rounded-md">15</b>
-                        <strong> ANOS DE MERCADO</strong>
+                    <p data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">
+                        <b className="font-semibold bg-linear-to-tr from bg-red-950 to-black text-white px-3 py-3 rounded-md" >15</b>
+                        <strong className='font-semibold'> ANOS DE MERCADO</strong>
                     </p>
                 </div>
             </div>
