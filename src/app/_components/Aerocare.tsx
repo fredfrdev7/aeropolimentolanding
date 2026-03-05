@@ -16,7 +16,7 @@ export default function Aerocare() {
                 
                 <h1 className="text-3xl md:text-4xl lg:text-4xl font-custom-extended font-semibold">AEROCARE</h1>
                 <h3 className="font-custom mt-6 text-2xl">PRESERVAÇÃO</h3>
-                <p className="font-custom pt-6">Serviços executados por equipe técnica qualificada, em conformidade com normas da ANAC, legislação trabalhista e segurança do trabalho, com seguro de responsabilidade civil e acidentes pessoais vigente para toda a mão de obra especializada envolvida</p>
+                <p className="font-custom pt-6">Soluções que incluem métodos profissionais desenvolvidos para manter sua aeronave sempre limpa, higienizada e com aparência impecável, desde cuidados essenciais até tratamentos de performance máxima. </p>
             </div>
         </section>
     )

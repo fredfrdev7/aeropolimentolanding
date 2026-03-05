@@ -46,15 +46,16 @@ export function Footer() {
 
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-                            <p className='font-light'>Telefone: (31) 3197363-9785</p>
+                            <p className='font-light'>Telefone: +55 (31) 97363-9785</p>
+                            <p className='font-light'>+1 (863) 419-6315</p>
                         </div>
 
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
                             <div className='flex gap-4'>
                                 <a href="#" target='_blank'><FacebookLogo className='w-8 h-8' /></a>
-                                <a href="#" target='_blank'><InstagramLogo className='w-8 h-8' /></a>
-                                <a href="#" target='_blank'><YoutubeLogo className='w-8 h-8' /></a>
+                                <a href="https://www.instagram.com/aeropolimentooficial" target='_blank'><InstagramLogo className='w-8 h-8' /></a>
+                                <a href="https://www.youtube.com/@aeropolimentodetailer" target='_blank'><YoutubeLogo className='w-8 h-8' /></a>
                             </div>
                         </div>
                     </footer>

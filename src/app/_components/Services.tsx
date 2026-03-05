@@ -1,8 +1,7 @@
 "use client"
 
 import useEmblaCarousel from 'embla-carousel-react'
-import { ListTodo, Bubbles, BrushCleaning, ChevronLeft, ChevronRight, ShieldCheck, SquareRoundCorner, Clock, Sparkles } from 'lucide-react'
-import { WhatsappLogo } from '@phosphor-icons/react'
+import { ListTodo, Bubbles, BrushCleaning, ChevronLeft, ChevronRight, ShieldCheck, SquareRoundCorner, Sparkles } from 'lucide-react'
 import checklist from '../../../public/checklist.jpg'
 import paintcleaner from '../../../public/paintcleaner.jpg'
 import insideclear from '../../../public/insideclear.jpg'
@@ -17,55 +16,37 @@ const services = [
     {
         title: "Check-list",
         description: "Procedimento de avaliação prévia da aeronave que gera um registro técnico antes do início dos serviços, garantindo segurança, conformidade e padrão de qualidade na execução.",
-        duration: "1h",
-        price: "$1500",
         icon: <ListTodo />,
-        linkText: "Olá vi no site sobre Descontaminação de pintura",
         image: checklist
     },
     {
         title: "Descontaminação de Pintura",
-        description: "Uma lavagem técninca da fuselagem removendo fuligens sujeiras ancoradas e contaminações",
-        duration: "1h",
-        price: "$1500",
+        description: "Uma lavagem técnica da fuselagem removendo fuligens sujeiras ancoradas e contaminações. Esse procedimento é essencial para preservar a pintura da aeronave.",
         icon: <Bubbles />,
-        linkText: "Olá vi no site sobre Descontaminação de pintura",
         image: paintcleaner
     },
     {
         title: "Higienização interna",
         description: "Higienização minuciosa de cockpit, galley, alojamento de galley, revestimentos em couro, cintos e tapetes, assegurando conservação e alto padrão estético da aeronave.",
-        duration: "1h",
-        price: "$3500",
         icon: <BrushCleaning />,
-        linkText: "Olá vi no site sobre Higienização interna",
         image: insideclear
     },
     {
         title: "Impermeabilização interna",
         description: "Aplicação de tratamento de impermeabilização para couro, cintos e tapeçaria, formando uma barreira protetiva contra umidade, sujeira e desgaste prematuro, preservando a aparência e a durabilidade dos materiais da aeronave.",
-        duration: "6h",
-        price: "$16000",
         icon: <ShieldCheck />,
-        linkText: "Olá vi no site sobre Impermeabilização interna",
         image: insidecare
     },
     {
         title: "Polimento técnico",
-        description: "Polimento técnico em superfícies com pintura poliéster e poliuretano, com métodos controlados para remoção de arranhões e marcas sem agressividade ao revestimento. O processo considera espessura, dureza, nível de brilho e padrão de acabamento, incluindo tratamentos em repinturas e etapas de lixamento quando necessárias, para restabelecer a estética da aeronave.",
-        duration: "16h",
-        price: "$15000",
+        description: "O processo de polimento corretivo é fundamental para manter a aparência e integridade da pintura. Através de técnicas especializadas, é possível eliminar riscos e marcas superficiais, ao mesmo tempo em que se restaura o brilho e a uniformidade da pintura na superfície. ",
         icon: <Sparkles />,
-        linkText: "Olá vi no site sobre Polimento técnico",
         image: proceduralpolish
     },
     {
         title: "Polimento de Para-brisa em Plexiglass",
         description: "Procedimento técnico de polimento em superfícies de Plexiglass para remoção de marcas leves, recuperação da transparência e melhoria da visibilidade, preservando as características originais do material e o padrão óptico da aeronave.",
-        duration: "16h",
-        price: "$15000",
         icon: <SquareRoundCorner />,
-        linkText: "Olá vi no site sobre Polimento técnico",
         image: plexiglass
     },
 
@@ -121,7 +102,7 @@ export function Services() {
                                                 <div className='flex items-center gap-2 text-sm'>
                                                     <Image src={logocard} className='w-9 h-9' alt='logocard' />
                                                 </div>
-                                                <a href="#" className='flex items-center justify-center text-sm border-red-950 border-2 gap-2 hover:bg-red-700 px-4 py-1 rounded-md duration-300'>
+                                                <a href="https://wa.me/5531973639785?text=Ol%C3%A1%2C%20venho%20do%20site%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os..." target='_blank' className='flex items-center justify-center text-sm border-red-950 border-2 gap-2 hover:bg-red-700 px-4 py-1 rounded-md duration-300'>
                                                     SAIBA MAIS
                                                 </a>
                                             </div>

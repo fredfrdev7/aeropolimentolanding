@@ -7,7 +7,7 @@ import logoap001 from "../../../public/logoap001.svg"
 import logoap0010 from "../../../public/logoap0010.svg"
 import logoap0020 from "../../../public/logoap0020.svg"
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr"
-import { Award, ChartNoAxesColumnIncreasing } from "lucide-react";
+import { ChartNoAxesColumnIncreasing, ListCheck } from "lucide-react";
 
 
 export default function Products() {
@@ -42,7 +42,7 @@ export default function Products() {
                         <p className="font-light">Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-6 py-6">
+                <div className="flex flex-col justify-center items-center gap-6 pt-6 pb-3">
                     <h3 className="w-full text-center font-bold border-b border-red-500">MASSA DE POLIR</h3>
                     <Image src={logoap0020} alt="logoap0020" className="w-22" data-aos="fade-right" />
                     <div className="flex flex-col items-center px-4 gap-3 lg:flex-row md:gap-36">
@@ -51,10 +51,11 @@ export default function Products() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center text-center gap-6">
-                <a href="#" className="bg-linear-to-tr from-red-950 via-red-700 via-50% to-red-500 to-160% flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md text-white"><WhatsappLogo className="w-5 h-5 text-white" />Contato via Whatsapp</a>
-                <h2 className="text-[0.8rem] tracking-[.03rem] text-center pb-0 px-4 font-semibold">APROVADOS PARA USO AERONÁUTICO DE ACORDO COM AS NORMAS DA ANAC</h2>
-                <p>Atendendo normas AMS internacionais</p>
+            <div className="flex flex-col justify-center items-center text-center gap-6 py-9 px-4">
+                <ListCheck  className="w-12 h-12 text-red-700"/>
+                <h2 className="text-center font-semibold">APROVADOS PARA USO AERONÁUTICO DE ACORDO COM AS NORMAS DA ANAC</h2>
+                <p className="text-[0.8rem]">Produtos em conformidade com as normas <strong>AMS (Aerospace Material Specifications)</strong>, atendendo especificações rigorosas para materiais metálicos, tratamentos térmicos e processos especiais, assegurando controle técnico, rastreabilidade completa e conformidade com as exigências da indústria aeroespacial internacional.</p>
+                <a href="#" className="bg-linear-to-tr from-red-950 via-red-700 via-50% to-red-500 to-160% flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md text-white"><WhatsappLogo className="w-5 h-5 text-white" />SAIBA MAIS</a>
             </div>
         </section>
     )
