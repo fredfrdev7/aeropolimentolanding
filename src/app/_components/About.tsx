@@ -23,7 +23,7 @@ export function About() {
 
                     <div className="space-y-6 mt-10 text-white">
                         <h1 className="text-3xl md:text-4xl lg:text-4xl font-custom-extended font-semibold" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">ASAS FIXA E ROTATIVA</h1>
-                        <p className="font-custom font-light" data-aos="fade-left">Nossa missão é atender respectivamente <strong>aviões e helicópteros</strong>, com serviços especializados de estética e preservação do interior e exterior, realizando intervenções e inspeções visuais minunciosas em cada superficie e componente, identificando possíveis depreciações e reparos necessários prezando pela integridade das aeronaves e valorização do ativo</p>
+                        <p className="font-custom" data-aos="fade-left">Nossa missão é atender respectivamente <strong>aviões e helicópteros</strong>, com serviços especializados de estética e preservação do interior e exterior, realizando intervenções e inspeções visuais minunciosas em cada superficie e componente, identificando possíveis depreciações e reparos necessários prezando pela integridade das aeronaves e valorização do ativo.</p>
 
                         <ul className="space-y-4 font-custom font-regular pt-3">
                             <li className="flex items-center gap-2" data-aos="fade-left">

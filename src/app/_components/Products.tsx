@@ -23,7 +23,7 @@ export default function Products() {
                     <p className="text-[0.8rem] tracking-[.08rem]">PERFORMANCE CLEANERS</p>
                 </div>
                 <ChartNoAxesColumnIncreasing className="w-12 h-12 text-red-700" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300" />
-                <h3 className="tracking-[.02rem] text-center uppercase p-4 font-light">Produtos de <b className="font-semibold">alto rendimento</b>, <b className="font-semibold">eficiência</b> e <b className="font-semibold">praticidade</b> de aplicação</h3>
+                <h3 className="tracking-[.02rem] text-center uppercase p-4">Produtos de <b className="font-semibold">alto rendimento</b>, <b className="font-semibold">eficiência</b> e <b className="font-semibold">praticidade</b> de aplicação</h3>
             </div>
             <div className="flex flex-col pt-6">
                 <div className="flex flex-col justify-center items-center gap-6 py-6">
@@ -31,7 +31,7 @@ export default function Products() {
                     <Image src={logoap001} alt="logoap001" className="w-21" data-aos="fade-right" />
                     <div className="flex flex-col items-center px-4 gap-3 lg:flex-row md:gap-36">
                         <Image src={ap001} alt="ap001" className="w-36 lg:w-46 md:w-36 py-6" />
-                        <p className="font-light">Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
+                        <p>Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente.</p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-6 py-6">
@@ -39,7 +39,7 @@ export default function Products() {
                     <Image src={logoap0010} alt="logoap0010" className="w-22" data-aos="fade-left" />
                     <div className="flex flex-col items-center px-4 gap-3 lg:flex-row md:gap-36">
                         <Image src={ap0010} alt="ap0010" className="w-46 lg:w-56 md:w-46 py-6" />
-                        <p className="font-light">Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
+                        <p>Uma aplicação que combina polimento e proteção, promovendo uma repelência na superficie. </p>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-6 pt-6 pb-3">
@@ -47,7 +47,7 @@ export default function Products() {
                     <Image src={logoap0020} alt="logoap0020" className="w-22" data-aos="fade-right" />
                     <div className="flex flex-col items-center px-4 gap-3 lg:flex-row md:gap-36">
                         <Image src={ap0020} alt="ap0020" className="w-46 lg:w-56 md:w-46 py-6" />
-                        <p className="font-light">Limpador versátil que pode ser usado em diferentes superfícies, tanto no interior quanto exterior, formulado para remover sujeiras e outros contaminantes de maneira eficiente, sem danificar as aréas sensíveis das aeronaves.</p>
+                        <p>Altamente indicada para revitalizar pinturas manchadas e oxidadas pela ação dos raios solares, pequenos arranhões e imperfeições. Ótima para pinturas PU e metálicas, cromados e metais em geral.</p>
                     </div>
                 </div>
             </div>

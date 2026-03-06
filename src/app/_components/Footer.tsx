@@ -38,7 +38,7 @@ export function Footer() {
                     <footer className='bg-red-800 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-9 px-4'>
                         <div>
                             <h3 className='text-2xl font-semibold mb-2 font-custom-extended'>AERO-SERVICE AND DETAILING</h3>
-                            <p className='mb-4 font-light'>Cuidando da sua Aeronave com amor e dedicação.</p>
+                            <p className='mb-4'>Cuidando da sua Aeronave com amor e dedicação.</p>
                             <a href="#" className='bg-green-500 px-4 py-1 rounded-md'>
                                 Contato via Whatsapp
                             </a>
@@ -46,8 +46,8 @@ export function Footer() {
 
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-                            <p className='font-light'>Telefone: +55 (31) 97363-9785</p>
-                            <p className='font-light'>+1 (863) 419-6315</p>
+                            <p>Telefone: +55 (31) 97363-9785</p>
+                            <p>+1 (863) 419-6315</p>
                         </div>
 
                         <div>

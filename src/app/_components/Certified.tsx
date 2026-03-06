@@ -13,7 +13,7 @@ export default function Certified() {
                 <div className="">
                     <h1 className="font-semibold text-3xl md:text-4xl lg:text-4xl pb-3 font-custom-extended" data-aos="fade-down" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">CERTIFICAÇÕES</h1>
                     <Award className="w-12 h-12 stroke-1" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300"/>
-                    <p className="pb-6 pt-4 font-custom font-light" data-aos="fade-right">A primeira empresa especializada em <strong>estética aeronaútica homologada</strong> para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e instituições regulamentadoras.</p>
+                    <p className="pb-6 pt-4 font-custom" data-aos="fade-right">A primeira empresa especializada em <strong>estética aeronaútica homologada</strong> para executar serviços de limpeza e conservação de aeronaves, atendendo em todo território nacional e internacional, conforme orientação dos manuais de fabricantes e instituições regulamentadoras.</p>
                 </div>
 
                 <div className="py-6 md:px-16 flex justify-center items-center gap-20">

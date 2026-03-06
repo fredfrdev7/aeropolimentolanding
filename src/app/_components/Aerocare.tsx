@@ -8,7 +8,7 @@ export default function Aerocare() {
 
             <div>
             
-                <Image src={hangaroito} alt='foto jato' fill sizes='100' className='absolute object-cover' quality={100} priority />
+                <Image src={hangaroito} alt='foto jato' fill sizes='100' className='absolute object-cover opacity-90' quality={100} priority />
             
             </div>
             <div className="flex flex-col relative h-screen text-black p-4 py-6 bg-linear-to-t from-white from-1% via-transparent to-white to-70%">

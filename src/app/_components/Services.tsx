@@ -91,7 +91,7 @@ export function Services() {
                                                 <span className='text-3xl pt-1'>{item.icon}</span>
                                                 <div>
                                                     <h3 className='font-semibold text-xl my-1'>{item.title}</h3>
-                                                    <p className='text-white text-sm font-light'>
+                                                    <p className='text-white text-sm'>
                                                         {item.description}
                                                     </p>
                                                 </div>
