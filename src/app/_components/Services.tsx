@@ -75,7 +75,7 @@ export function Services() {
         <section className="bg-white py-12">
             <div className="container mx-auto px-4">
 
-                <h2 className="text-3xl md:text-4xl lg:text-4xl font-custom-extended font-semibold mb-12" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="300">SERVIÇOS</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-4xl font-custom-extended font-semibold mb-12" data-aos="fade-right">SERVIÇOS</h2>
 
                 <div className="relative">
                     <div className='overflow-hidden' ref={emblaRef}>

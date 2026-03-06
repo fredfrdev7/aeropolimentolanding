@@ -12,6 +12,8 @@ import beechcraft from '../../../public/beechcraft.svg'
 import dassault from '../../../public/dassault.svg'
 import gulfstream from '../../../public/gulfstream.svg'
 import Image from 'next/image'
+import brazilflag from '../../../public/brazilflag.svg'
+import usaflag from '../../../public/usaflag.svg'
 import { FacebookLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr'
 
 
@@ -39,23 +41,29 @@ export function Footer() {
                         <div>
                             <h3 className='text-2xl font-semibold mb-2 font-custom-extended'>AERO-SERVICE AND DETAILING</h3>
                             <p className='mb-4'>Cuidando da sua Aeronave com amor e dedicação.</p>
-                            <a href="#" className='bg-green-500 px-4 py-1 rounded-md'>
+                            {/* <a href="#" className='bg-green-500 px-4 py-1 rounded-md'>
                                 Contato via Whatsapp
-                            </a>
+                            </a> */}
                         </div>
 
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>Contatos</h3>
-                            <p>Telefone: +55 (31) 97363-9785</p>
-                            <p>+1 (863) 419-6315</p>
+                            <div className='flex gap-3 mb-3'>
+                                <Image src={brazilflag} alt="brazilflag" className="w-10" />
+                                <p>+55 (31) 97363-9785</p>
+                            </div>
+                            <div className='flex gap-3'>
+                                <Image src={usaflag} alt="brazilflag" className="w-10" />
+                                <p>+1 (415) 433-9014</p>
+                            </div>
                         </div>
 
                         <div>
                             <h3 className='text-2xl font-semibold mb-2'>Redes Sociais</h3>
                             <div className='flex gap-4'>
-                                <a href="#" target='_blank'><FacebookLogo className='w-8 h-8' /></a>
-                                <a href="https://www.instagram.com/aeropolimentooficial" target='_blank'><InstagramLogo className='w-8 h-8' /></a>
-                                <a href="https://www.youtube.com/@aeropolimentodetailer" target='_blank'><YoutubeLogo className='w-8 h-8' /></a>
+                                <a href="https://www.instagram.com/aeropolimentooficial" target='_blank'><FacebookLogo className='w-9 h-9' /></a>
+                                <a href="https://www.instagram.com/aeropolimentooficial" target='_blank'><InstagramLogo className='w-9 h-9' /></a>
+                                <a href="https://www.youtube.com/@aeropolimentodetailer" target='_blank'><YoutubeLogo className='w-9 h-9' /></a>
                             </div>
                         </div>
                     </footer>
