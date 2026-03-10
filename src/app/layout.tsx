@@ -30,6 +30,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/pfb0ycu.css"></link>
+        <meta name="apple-mobile-web-app-title" content="Aeropolimento"></meta>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
