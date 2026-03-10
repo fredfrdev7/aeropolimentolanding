@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Aeropolimento",
+  "short_name": "Aeropolimento",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -16,5 +16,6 @@
     }
   ],
   "theme_color": "#000000",
-  "background_color": "#000000"
+  "background_color": "#000000",
+  "start_url" : "https://aeropolimento.com.br/"
 }
