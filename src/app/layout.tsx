@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/pfb0ycu.css"></link>
       </head>
